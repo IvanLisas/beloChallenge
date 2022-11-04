@@ -1,0 +1,54 @@
+services:
+  api-okex-service:
+    build:
+      dockerfile: Dockerfile
+      context: '.'
+    container_name: api-okex-service
+    command: yarn start
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 3000:3000
+    depends_on:
+      - db-okex-service
+    networks:
+      okex:
+        aliases:
+          - api-okex-service
+  db-okex-service:
+    image: postgres
+    container_name: db-okex-service
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: okex
+    ports:
+      - 5432:5432
+    volumes:
+      - db-okex-service:/var/lib/postgresql/data
+    networks:
+      okex:
+        aliases:
+          - db-okex-service
+  pgadmin4:
+    image: dpage/pgadmin4
+    restart: always
+    ports:
+      - 801:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=user@domain.com
+      - PGADMIN_DEFAULT_PASSWORD=SuperSecret
+    networks:
+      okex:
+        aliases:
+          - pgadmin4
+
+networks:
+  okex:
+    name: okex-network
+
+volumes:
+  db-okex-service:
+    driver: local
