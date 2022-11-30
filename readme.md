@@ -56,7 +56,7 @@ Es la diferencia entre el mejor precio de compra y el mejor precio de venta en e
 
 ## Instalacion
 
-Para correr el este proyecto es necesario el archivo .env en la carpeta raiz del proyecto, podemos toma como ejemplo el archivo `.env.example`
+Para correr este proyecto es necesario el archivo .env en la carpeta raiz del proyecto, podemos toma como ejemplo el archivo `.env.example`
 
 #### Varibales de entorno necesarias
 
