@@ -61,11 +61,18 @@ Para correr este proyecto es necesario el archivo .env en la carpeta raiz del pr
 #### Varibales de entorno necesarias
 
 ```bash
+#DB
 DB_HOST = db-okex-service
 DB_PORT = 5432
 DB_USERNAME = postgres
 DB_PASSWORD = postgres
 DB_NAME = okex
+
+#Credentials
+OK_ACCESS_KEY = your_okex_access_key
+OK_ACCESS_SECRET = your_okex_secret_key
+OK_ACCESS_PASSPHRASE = your_okex_passphrase
+URL = https://www.okex.com
 ```
 
 Todos los servicios necesarios estan dockerizados en `docker-compose.yml` este mismo incluye la api, la base de datos postgres y pgAdmin para poder visualizar los datos
