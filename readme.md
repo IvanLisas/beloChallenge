@@ -75,7 +75,7 @@ OK_ACCESS_PASSPHRASE = your_okex_passphrase
 URL = https://www.okex.com
 ```
 
-Tener en cuenta que necesitamos tener una cuenta en DEMO de Okex para obtener las credenciales. 
+Tener en cuenta que necesitamos tener una cuenta DEMO de Okex para obtener las credenciales. 
 
 ```
 Start API Demo Trading by the following steps:
