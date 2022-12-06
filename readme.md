@@ -75,6 +75,15 @@ OK_ACCESS_PASSPHRASE = your_okex_passphrase
 URL = https://www.okex.com
 ```
 
+Tener en cuenta que necesitamos tener una cuenta en DEMO de Okex para obtener las credenciales. 
+
+```
+Start API Demo Trading by the following steps:
+Login OKX —> Assets —> Start Demo Trading —> Personal Center —> Demo Trading API -> Create Demo Trading V5 APIKey —> Start your Demo Trading
+```
+
+Mas info: https://www.okx.com/docs-v5/en/#overview-production-trading-services
+
 Todos los servicios necesarios estan dockerizados en `docker-compose.yml` este mismo incluye la api, la base de datos postgres y pgAdmin para poder visualizar los datos
 
 Para poder correr el proyecto ejecutamos el siguiente comando en la raiz del proyecto:
