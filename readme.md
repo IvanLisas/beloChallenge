@@ -84,7 +84,7 @@ Login OKX —> Assets —> Start Demo Trading —> Personal Center —> Demo Tra
 
 Mas info: https://www.okx.com/docs-v5/en/#overview-production-trading-services
 
-Todos los servicios necesarios estan dockerizados en `docker-compose.yml` este mismo incluye la api, la base de datos postgres y pgAdmin para poder visualizar los datos
+Todos los servicios necesarios estan dockerizados en `docker-compose.yml` este mismo incluye la api, la base de datos postgres y pgAdmin para poder visualizar los datos.
 
 Para poder correr el proyecto ejecutamos el siguiente comando en la raiz del proyecto:
 
