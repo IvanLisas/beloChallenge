@@ -1,4 +1,4 @@
-# Backend challenge
+# Backend challenge 
 
 Para consultas estamos disponibles en [https://comunidad.belo.app](https://comunidad.belo.app)
 
